@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: rgb(255, 255, 255);
+  font-family: "Helvetica Neue", sans-serif;
+  text-align: center;
+  min-height: 100vh;
+}
 
 /*****************************************/
 nav{
@@ -39,8 +45,12 @@ a{
   justify-content:center;
   align-items: center;
   flex-wrap: wrap; 
-  min-height: 90vh;
+  min-height: 88vh;
   background-color: rgb(79, 120, 255);
+  background-image: url("https://img.freepik.com/vetores-gratis/fundo-de-dia-internacional-do-gato-desenhado-a-mao_23-2149487429.jpg?w=2000");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .container {
@@ -79,7 +89,8 @@ footer {
 }
 */
 #imgCat{
-  width: 400px;
+  min-width: 40vw;
+  max-width: 65vw;
   margin: 10px;
 }
 

@@ -1,3 +1,6 @@
+let itens = []
+
+
 
 const listaCEPs = {
   ['99999999']: {
@@ -42,7 +45,6 @@ const resCid = document.getElementById("res-cid")
 const resEst = document.getElementById("res-est")
 const resUf = document.getElementById("res-uf")
 const resCep = document.getElementById("res-cep")
-const resDdd = document.getElementById("res-ddd")
 
 /*************************** INPUT ******************************/
 const logInput = document.getElementById('log-input')
@@ -69,12 +71,11 @@ function buscaCEP(cep) {
         resCid.innerText = json.localidade
         resUf.innerText = json.uf
         resCep.innerText = json.cep
-        resDdd.innerText = json.ddd
       })
     })
     .catch((erro) => {
       console.log('FALHA', erro)
-      pResult.style.color = "#F4561F";
+      pResult.style.color = "#F00";
       pResult.innerText = 'CEP inválido!'
       
     })
@@ -98,13 +99,13 @@ async function buscaAsyncCEP(cep) {
      resUf.innerText = `UF: ${json.uf}`
      resEst.innerText = `ESTADO: ${json.uf}`
      resCep.innerText = `CEP: ${json.cep}`
-     resDdd.innerText = `DDD:${json.ddd}`
+
 
      endForm.reset() // RESETAR O FORMULARIO DE ENDEREÇO ASSIM QUE O BOTAO FOR CLICADO
 
   } catch (erro) {
     console.log('FALHA', erro)
-    pResult.style.color = "rgb(255, 50, 50)";
+    pResult.style.color = "#F00";
     pResult.style.fontWeight = "bold";
     pResult.style.fontSize = "1.3rem";
     pResult.innerText = 'CEP inválido!'
@@ -118,3 +119,4 @@ btnBuscar.addEventListener('click', () => {
   buscaAsyncCEP(inCEP.value)
   inCEP.value = ''
   })
+
