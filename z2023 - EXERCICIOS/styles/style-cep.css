@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+
+  
+/*****************************************/
+nav{
+    height: 10vh;
+    width: 100vw;  
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: white;
+  }
+  
+  #listaMENU{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  }
+  
+  ul li{
+    padding: 10px;
+    list-style: none;
+  }
+  
+  a{
+    text-decoration: none;
+  }
+  
+  /*****************************************/
+
+  #section-cep{
+    background-color: rgb(185, 185, 185);
+    margin: 30px;
+    padding: 20px;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  #div-cep{
+    background-color: rgb(0, 0, 70);
+    border-radius: 20px;
+    min-width: 30vw;
+    padding: 10px;
+
+  }
+
+#div-result{
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  filter: drop-shadow(0 0 5px black);
+  min-width: 10vw;
+  height: auto;
+  padding: 20px;
+  margin: 20px;
+  color: rgb(0, 0, 0);
+  font-size: 1.3rem;
+  font-weight: bold;
+  }
+
+  #buscar{
+background-color: rebeccapurple;
+border: 1px solid rgb(0, 0, 0);
+border-radius: 7px;
+color: white;
+font-size: 1.3rem;
+filter: drop-shadow(0 0 5px black);
+padding: 10px;
+margin: 10px;
+}
+
+
+#buscar:hover{
+  background-color: rgb(170, 85, 255);
+  border: 1px solid white;
+  color: rgb(0, 0, 0);
+  filter: drop-shadow(0 0 5px black);
+  }
+
+
+input{
+margin: 10px;
+font-size: 1.3rem;
+color: #000;
+}
+
+input::placeholder {
+  color: rgb(206, 206, 206);
+}
+
+input:hover{
+  background-color: rgb(156, 156, 156);
+  color: black;
+}
+input:focus{
+  background-color: rgb(29, 153, 255);
+  color: white;
+}
+
+
+#resultado{
+color: white;  
+font-size: 1rem;
+margin: 10px;
+
+}
