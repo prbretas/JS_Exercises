@@ -32,6 +32,13 @@ async function getCat() {
   }
 }
 
+const interval = () => getCat();
+const intervalId = setInterval(interval, 8000);
+
+/*const Timeout = () => getCat();
+setTimeout(Timeout, 4000); //2000 milisegundos = 2 segundos
+*/
+
 btnGetCat.addEventListener('click', getCat)
 
 getCat()
