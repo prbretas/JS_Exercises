@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cat API</title>
     <link rel="stylesheet" href="../styles/common-style.css" />
-    <link rel="stylesheet" href="../styles/style-cat.css" />
+    <link rel="stylesheet" href="../styles/games.css" />
     <link rel="shortcut icon" href="../comum/favicon.ico" type="image/x-icon" />
-    <script src="../scripts/script-cat.js" type="module"></script>
+    <script src="" type="module"></script>
 </head>
 <body>
     <nav>
@@ -19,23 +19,49 @@
         <ul id="listaMENU">
             <a href="../index.html"><li class="item-menu">HOME</li></a>
             <a href="./calculadora.html"><li class="item-menu">Calculadora</li></a>
-            <a href="#"><li class="item-menu">CAT API</li></a>
-            <a href="./games.html"><li class="item-menu">Games</li></a>
+            <a href="./cat.html"><li class="item-menu">CAT API</li></a>
+            <a href="#"><li class="item-menu">Games</li></a>
             <a href="./cep.html"><li class="item-menu">VIA CEP</li></a>
             <a href="./lista.html"><li class="item-menu">Lista</li></a>   
             <a href="./music-player.html"><li class="item-menu">Music Player</li></a>
         </ul>
     </nav>
     <hr>
+
+    <div id="divGames">
+        <a id="linkGame1" href="#iframeGames" onclick="alterarLinkFilme0()"><img src="https://m.media-amazon.com/images/M/MV5BZjM5NzRlZmItM2Y1Mi00MTNhLTlhZTEtZWNhN2U5M2U3NzBlXkEyXkFqcGdeQXVyMTA0MTM5NjI2._V1_FMjpg_UX1000_.jpg" alt class="capaGame"></a>
+        <a id="linkGame2" href="#iframeGames" onclick="alterarLinkFilme1()"><img src="https://static.wikia.nocookie.net/jamesbond/images/8/84/Tomorrow_Never_Dies_cover.png" alt class="capaGame"></a>
+        <a id="linkGame3" href="#iframeGames" onclick="alterarLinkFilme2()"><img src="https://assets-prd.ignimgs.com/2022/01/19/final-fantasy-tactics-the-war-of-the-lions-button-1642628464216.jpg" alt class="capaGame"></a>
+        <a id="linkGame1" href="#iframeGames" onclick="alterarLinkFilme0()"><img src="https://m.media-amazon.com/images/M/MV5BZjM5NzRlZmItM2Y1Mi00MTNhLTlhZTEtZWNhN2U5M2U3NzBlXkEyXkFqcGdeQXVyMTA0MTM5NjI2._V1_FMjpg_UX1000_.jpg" alt class="capaGame"></a>
+        <a id="linkGame1" href="#iframeGames" onclick="alterarLinkFilme0()"><img src="https://m.media-amazon.com/images/M/MV5BZjM5NzRlZmItM2Y1Mi00MTNhLTlhZTEtZWNhN2U5M2U3NzBlXkEyXkFqcGdeQXVyMTA0MTM5NjI2._V1_FMjpg_UX1000_.jpg" alt class="capaGame"></a>
+    </div>
+
     <section class="Section1">
         <div class="container">
-            <button id="getCatbtn">Get Cat</button>
-            <p id="loading"></p>
-            <img id="imgCat" src="" alt="Cat image." />
+            <iframe id="iframeGames" src="" width="600" height="450" frameborder="no" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" scrolling="no"></iframe>            
+        </div>
+    </section>
+
+    <section class="Section1">
+        <div class="container">
+            <h3>LINKS PARA DOWNLOADS</h3>            
+            <a href="https://www.downloadgames.io/" target="_blank">
+                <p>https://www.downloadgames.io/</p>
+            </a>
+            <a href="https://www.emugames.net/" target="_blank">
+                <p>https://www.emugames.net/</p>
+            </a>
+            <a href="https://emulatoronline.com/" target="_blank">
+                <p>https://emulatoronline.com/</p>
+            </a>  
+            <a href="https://www.retrogames.onl/" target="_blank">
+                <p>https://www.retrogames.onl/</p>
+            </a>        
         </div>
     </section>
     <footer>
     </footer>
+    <script src="../scripts/games.js" defer></script>
 </body>
 
 </html>
