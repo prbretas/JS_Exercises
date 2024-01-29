@@ -11,7 +11,9 @@ console.log(divGames)
 let sourceGames = [];
 sourceGames[0] = "https://www.retrogames.cc/embed/42834-pokemon-fire-red-extended-v2-0-4.html"; //POKEMON RED
 sourceGames[1] = "https://www.retrogames.cc/embed/40787-007-tomorrow-never-dies.html"// 007 - TND
-sourceGames[2] = "https://www.retrogames.cc/embed/44529-final-fantasy-tactics-the-lion-war-2-031.html"// FINAL FANTASY TACTICS
+sourceGames[2] = "https://www.retrogames.cc/embed/41787-final-fantasy-tactics.html"// FINAL FANTASY TACTICS
+sourceGames[3] = "https://www.retrogames.cc/embed/41828-grand-theft-auto-2.html"// FINAL FANTASY TACTICS
+
 
 
 //ALTERANDO O ATRIBUTO SRC DO ELEMENTO HTML VIDEO
