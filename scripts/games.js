@@ -32,3 +32,14 @@ function alterarLinkGame2() {
 }
 
 
+
+
+
+/******************ADIONAR EVENTO NO MENU HIDE *******/
+const myOffcanvas = document.getElementById('offcanvasWithBothOptions')
+offcanvasWithBothOptions.addEventListener('hidePrevented.bs.offcanvas', event => {
+  alert("OLA")
+  // do something...
+})
+
+
