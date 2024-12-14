@@ -1,26 +1,41 @@
 body {
   font-family: Arial, sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
   height: 100vh;
   margin: 0;
   background-color: #f0f0f0;
+  min-width: 100vw;
 }
 
-#sobre{
-    padding: 20px;
-    width: 40vw;
-
+#sobre {
+  padding: 20px;
+  width: 40vw;
 }
 
 .container {
-  text-align: center;
-  background: white;
-  padding: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+#div {
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  height: 500px;
+  width: 600px;
+  margin: 10px;
 }
+
 input[type="text"],
 input[type="number"] {
   padding: 10px;

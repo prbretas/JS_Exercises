@@ -1,13 +1,19 @@
-
+@import "./reset.css";
 
 body{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   width: 100vw;
+  background-color: rgb(0, 0, 0);
+  background-image: url("../images/history.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+background-blend-mode: luminosity;
 
 }
-
+  
 .Section1{
   display: flex;
   flex-direction: column;
@@ -15,15 +21,11 @@ body{
   align-items: center;
   flex-wrap: wrap; 
   min-height: 88vh;
-  background-color: rgb(79, 120, 255);
-  background-image: url("../images/PS1-Background-2.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+
 }
 
 .container {
-  background-color: white;
+  background-color: rgb(21, 0, 0);
   border-radius: 20px;
   filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.473));
   min-width: 400px;
@@ -186,7 +188,7 @@ nav{
   .item-menu{
     padding: 10px;
     list-style: none;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-size: 1rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     
@@ -202,17 +204,6 @@ nav{
   #listaMENU a{
     text-decoration: none;
   }
-
-
-
-
-
-
-
-
-
-
-
   
 .icon-bar {
   width: 90px;
@@ -236,5 +227,191 @@ nav{
   background-color: #04AA6D;
 }
 
+
+#divLinks {
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    }
+
+.linkgm {
+  width: 360px;
+  font-style: italic;
+  color: rgb(255, 242, 0);
+  /*background-color: blue;*/
+}
+.linkgm:hover {
+  color: rgb(0, 136, 255);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+
+/********************** TELA DO FILME **************************/
+#divFilme {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 0 10px;
+}
+
+.imgFilme {
+  border: 2px solid white;
+  margin: 5px 10px;
+  min-width: 35px;
+  height: 40vh;
+  transition: 0.5s;
+  border-radius: 3px;
+}
+
+.imgFilme:hover {
+  scale: 1.1;
+  filter: drop-shadow(0 0 5px rgb(255, 255, 255));
+}
+
+/********************** TELA DO FILME **************************/
+#divTelaFilme {
+  margin: 30px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+}
+
+#iframe1 , #iframeSeries{
+  background-image: url(../../img/bgiframe.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 85vw;
+  height: 92vh;
+  border: 1px solid white;
+}
+
+/******************* MEDIA QUERY ************************************/
+/* Desktop grande */
+@media (min-width: 1200px) {
+}
+/* Tablet em retrato a paisagem e desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+  #header {
+    height: 15vh;
+  }
+
+  .lottieIcon {
+    width: 60px;
+    height: 60px;
+  }
+  p {
+    font-size: 0.9rem;
+    padding: 0 15px;
+  }
+  #iframe1, #iframePlutoTV, #iframeCanal{
+    height: 55vh;
+  }
+}
+/* Telefones em paisagem a tablet em retrato */
+@media (min-width: 481px) and (max-width: 767px) {
+  #header {
+    height: 12vh;
+  }
+
+  .lottieIcon {
+    width: 40px;
+    height: 40px;
+  }
+
+  #titulo {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+    padding: 0 15px;
+  }
+
+  .centerMenu {
+    justify-content: space-between;
+    margin-top: 8px;
+  
+  }
+
+  .centerMenu li a {
+    font-size: 1rem;
+    padding: 6px;
+    
+
+  }
+
+  #iframe1, #iframePlutoTV, #iframeCanal{
+    height: 50vh;
+  }
+
+}
+/* Telefones em paisagem e abaixo */
+@media (min-width: 341px) and (max-width: 480px) {
+  #header {
+    height: 10vh;
+  }
+  .lottieIcon {
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+  }
+
+  #titulo {
+    font-size: 1.8rem;
+  }
+
+  .centerMenu {
+    justify-content: space-between;
+    margin-top: 8px;
+  
+  }
+
+  .centerMenu li a {
+    font-size: 0.8rem;
+    padding: 6px;
+
+  }
+  #iframe1, #iframePlutoTV, #iframeCanal{
+    height: 45vh;
+  }
+}
+/* Telefones abaixo de 340 a 240px*/
+@media (min-width: 241px) and (max-width: 340px) {
+
+  #titulo {
+    font-size: 1.4rem;
+  }
+
+  .centerMenu li a {
+    font-size: 0.6rem;
+    padding: 0 6px 0 3px;
+  
+  }
+  
+  #iframe1,#iframePlutoTV, #iframeCanal{
+    height: 25vh;
+  }
+}
+@media (max-width: 240px) {
+
+  #titulo {
+    font-size: 1.4rem;
+  }
+
+  .centerMenu li a {
+    font-size: 0.48rem;
+    padding: 0 6px 0 3px;
+  
+  }
+  #iframe1,#iframePlutoTV, #iframeCanal{
+    height: 20vh;
+  }
+  
+}
 
 

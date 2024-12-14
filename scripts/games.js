@@ -1,39 +1,5 @@
-let divGames = document.getElementById('divGames');
-let linkGame = document.querySelector(".aGame");
-let alinkGameId = []
-
-console.log(divGames.children[0].id)
-console.log(divGames.children[1].id)
-console.log(divGames.children[2].id)
-
-console.log(divGames)
-
-let sourceGames = [];
-sourceGames[0] = "https://www.retrogames.cc/embed/42834-pokemon-fire-red-extended-v2-0-4.html"; //POKEMON RED
-sourceGames[1] = "https://www.retrogames.cc/embed/40787-007-tomorrow-never-dies.html"// 007 - TND
-sourceGames[2] = "https://www.retrogames.cc/embed/41787-final-fantasy-tactics.html"// FINAL FANTASY TACTICS
-sourceGames[3] = "https://www.retrogames.cc/embed/41828-grand-theft-auto-2.html"// FINAL FANTASY TACTICS
-
-
-
-//ALTERANDO O ATRIBUTO SRC DO ELEMENTO HTML VIDEO
-let iframeGames = document.getElementById("iframeGames");
-
-function alterarLinkGame0() {
-  iframeGames.setAttribute("src", sourceGames[0]);
-}
-
-function alterarLinkGame1() {
-  iframeGames.setAttribute("src", sourceGames[1]);
-}
-
-function alterarLinkGame2() {
-  iframeGames.setAttribute("src", sourceGames[2]);
-}
-
-
-
-
+let iframeGame = document.getElementById("iframe1")
+let srcLinks = [];
 
 /******************ADIONAR EVENTO NO MENU HIDE *******/
 function openNav() {
@@ -42,4 +8,24 @@ function openNav() {
 
 function closeNav() {
   document.getElementById("mySidebar").style.width = "0";
+}
+
+
+
+srcLinks[0] = "https://coolrom.com.au"; //cool room
+srcLinks[1] = "https://www.myabandonware.com"; //My Abandonware
+srcLinks[2] = "https://www.retrogames.cc/"; //retrogames
+srcLinks[3] = "https://gam.onl/"; //retrogames
+
+
+function altGameLink(){
+  iframeGame.setAttribute("src", srcLinks[0]);
+}
+
+//ALTERANDO O ATRIBUTO SRC DO ELEMENTO HTML VIDEO
+
+function alterarLinkGame(idLinkGame) {
+ this.idLinkGame = idLinkGame
+console.log(idLinkGame)
+iframeGame.setAttribute("src", srcLinks[idLinkGame]);
 }
